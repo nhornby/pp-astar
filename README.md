@@ -2,7 +2,7 @@ Personal Project
 =======================
 A* Pathfinding
 
-Author: Nolan Hornby <nhornby@umich.edu>
+Author: Nolan Hornby <nhornby@umich.edu>\n
 Date: Tuesday, August 11th, 2020
 
 # Purpose

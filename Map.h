@@ -24,6 +24,14 @@
  * Class of 2023
  */ 
 
+struct lesser_f
+{
+    inline bool operator() (const Node * a, const Node * b)
+    {
+        return (a->f < b->f);
+    }
+};
+
 class Map {
 public:
     Map(std::string inputfile) : start(nullptr), end(nullptr) {
@@ -63,7 +71,8 @@ public:
     {
         if(start == nullptr || end == nullptr) {return;}
 
-        std::vector<Node *> open = {start};
+        std::vector<Node *> open;
+        open.push_back(start);
         std::vector<Node *> closed;
         
         int count = 0;
@@ -73,7 +82,7 @@ public:
             count++;
             if(debug) {print_map_debug(open);}
 
-            sort(open.begin(), open.end(), [](const Node * a, const Node * b) {return a->f < b->f;});
+            sort(open.begin(), open.end(), lesser_f());
             Node * current = open[0];
             open.erase(open.begin());
             closed.push_back(current);

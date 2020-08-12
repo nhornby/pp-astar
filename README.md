@@ -2,7 +2,7 @@ Personal Project
 =======================
 A* Pathfinding
 
-Author: Nolan Hornby <nhornby@umich.edu>\n
+Author: Nolan Hornby <nhornby@umich.edu> 
 Date: Tuesday, August 11th, 2020
 
 # Purpose
@@ -14,8 +14,8 @@ $ g++ astar.cpp -o astar.exe
 ./astar.exe inputexample.txt
 ```
 Extra arguments such as --diag and --debug can be added.
---diag allows diagonal steps to be made
---debug shows each step, with ? symbols representing the Nodes in the open set
+--diag allows diagonal steps to be made.
+--debug shows each step, with ? symbols representing the Nodes in the open set.
 
 # Example Input File ("inputexample.txt")
 ```console

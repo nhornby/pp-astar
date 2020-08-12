@@ -56,7 +56,7 @@ public:
     int row, col;
     int type;
     float f, g;
-    Node * parent = nullptr;
+    Node * parent;
 };
 
 #endif
